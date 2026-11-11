@@ -23,3 +23,7 @@ Not made or endorsed by Andrej Karpathy, Anthropic or Eureka Labs.
 - Use an ASD-STE100 style: short sentences (max ~20 words), active voice, simple words, one idea per sentence.
 - Use our own words only. Never copy his text. Keep any quote under 15 words.
 - Every item links to its original source.
+
+## Emails to subscribers
+
+`.github/workflows/newsletter.yml` runs when `data.js` changes on `main`. It finds posts that are new since the last commit and sends one email through the Buttondown API. It needs a repository secret called `BUTTONDOWN_API_KEY` (Settings → Secrets and variables → Actions).
