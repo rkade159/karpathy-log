@@ -10,7 +10,7 @@ window.SITE = {
   lastChecked: "2026-11-11",
   checkEveryDays: 4,
   // Full public address of the site. Used for links in the RSS feed and the emails.
-  siteUrl: "",
+  siteUrl: "https://rkade159.github.io/karpathy-log/",
   // Buttondown username. Buttondown stores subscribers and emails them new posts from feed.xml.
   buttondown: "karpathy.log",
   // Show YouTube players and X posts inside the page.

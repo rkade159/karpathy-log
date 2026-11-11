@@ -2,178 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>karpathy.log</title>
-    <link>https://example.com/</link>
-    <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://rkade159.github.io/karpathy-log/</link>
+    <atom:link href="https://rkade159.github.io/karpathy-log/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An unofficial archive of Andrej Karpathy's public work on AI.</description>
     <language>en-gb</language>
     <lastBuildDate>Wed, 11 Nov 2026 12:00:00 GMT</lastBuildDate>
     <item>
       <title>TristanTube: 47,000 videos from one person's favourite channels</title>
-      <link>https://example.com/#post-tristantube</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-tristantube</link>
       <guid isPermaLink="false">karpathy-log-tristantube</guid>
       <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Tristan Hume published a list of his top YouTube channels. Karpathy made the list into a video site. The site has about 47,000 technical videos and a TV mode for relaxed watching.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He says Claude Code built the site in one attempt, in about 3 minutes.&lt;/li&gt;&lt;li&gt;It follows the same idea as HackerTube (below): a video feed chosen by people, not by an algorithm.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-tristantube&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2119114537442189652&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://karpathy.ai/tristan-tube/&quot;&gt;TristanTube&lt;/a&gt; · &lt;a href=&quot;https://thume.ca/&quot;&gt;Tristan's list&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Tristan Hume published a list of his top YouTube channels. Karpathy made the list into a video site. The site has about 47,000 technical videos and a TV mode for relaxed watching.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He says Claude Code built the site in one attempt, in about 3 minutes.&lt;/li&gt;&lt;li&gt;It follows the same idea as HackerTube (below): a video feed chosen by people, not by an algorithm.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-tristantube&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2119114537442189652&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://karpathy.ai/tristan-tube/&quot;&gt;TristanTube&lt;/a&gt; · &lt;a href=&quot;https://thume.ca/&quot;&gt;Tristan's list&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>HackerTube: a YouTube made from Hacker News recommendations</title>
-      <link>https://example.com/#post-hackertube</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-hackertube</link>
       <guid isPermaLink="false">karpathy-log-hackertube</guid>
       <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy did not like his YouTube recommendations. He asked Claude to make a better video site. Claude filtered about 43 million Hacker News comments down to 6,454 videos that people recommend again and again.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The videos cover about 150 topics. The comments go from 2007 to 2026.&lt;/li&gt;&lt;li&gt;The work took about 2 hours with Claude Opus 5.5. He did not write or run code himself.&lt;/li&gt;&lt;li&gt;He did only three steps by hand: make a YouTube API key, start a server, and buy the domain.&lt;/li&gt;&lt;li&gt;The 'For You' feed needs no account. It keeps your history in your browser.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-hackertube&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/hacker-tube/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://hackertube.org/&quot;&gt;hackertube.org&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=50319510&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy did not like his YouTube recommendations. He asked Claude to make a better video site. Claude filtered about 43 million Hacker News comments down to 6,454 videos that people recommend again and again.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The videos cover about 150 topics. The comments go from 2007 to 2026.&lt;/li&gt;&lt;li&gt;The work took about 2 hours with Claude Opus 5.5. He did not write or run code himself.&lt;/li&gt;&lt;li&gt;He did only three steps by hand: make a YouTube API key, start a server, and buy the domain.&lt;/li&gt;&lt;li&gt;The 'For You' feed needs no account. It keeps your history in your browser.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-hackertube&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/hacker-tube/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://hackertube.org/&quot;&gt;hackertube.org&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=50319510&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The gap in AI understanding is getting wider</title>
-      <link>https://example.com/#post-funnel</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-funnel</link>
       <guid isPermaLink="false">karpathy-log-funnel</guid>
       <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy shared again a post from April. He says people no longer split into two groups that talk past each other. Their understanding of AI now looks like a narrow funnel.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;About 6 billion people have almost no contact with LLMs.&lt;/li&gt;&lt;li&gt;About 1–2 billion people use free chatbots sometimes. They see a better search engine or a writing aid.&lt;/li&gt;&lt;li&gt;About 20 million professionals in maths and code see agents finish large projects from one prompt.&lt;/li&gt;&lt;li&gt;At the narrow end is a small group of people inside the AI labs. He calls all of these numbers 'napkin math'.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-funnel&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2109361546505966046&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=50047422&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy shared again a post from April. He says people no longer split into two groups that talk past each other. Their understanding of AI now looks like a narrow funnel.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;About 6 billion people have almost no contact with LLMs.&lt;/li&gt;&lt;li&gt;About 1–2 billion people use free chatbots sometimes. They see a better search engine or a writing aid.&lt;/li&gt;&lt;li&gt;About 20 million professionals in maths and code see agents finish large projects from one prompt.&lt;/li&gt;&lt;li&gt;At the narrow end is a small group of people inside the AI labs. He calls all of these numbers 'napkin math'.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-funnel&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2109361546505966046&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=50047422&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Four ways to understand what an LLM tells you</title>
-      <link>https://example.com/#post-understand-outputs</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-understand-outputs</link>
       <guid isPermaLink="false">karpathy-log-understand-outputs</guid>
       <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy says that people will spend more and more time reading and checking LLM output. He gives four formats that make output easier to understand.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Writing: ask for ASD-STE100, a strict 'Simplified Technical English' made for aircraft manuals. He finds it much easier to read.&lt;/li&gt;&lt;li&gt;Diagrams: ask for a diagram instead of paragraphs.&lt;/li&gt;&lt;li&gt;HTML: ask for an interactive web page.&lt;/li&gt;&lt;li&gt;Video: custom explainer videos. He is most excited about this format.&lt;/li&gt;&lt;li&gt;Note: this site writes its summaries in an STE style because of this post.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-understand-outputs&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2105819303471976479&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy says that people will spend more and more time reading and checking LLM output. He gives four formats that make output easier to understand.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Writing: ask for ASD-STE100, a strict 'Simplified Technical English' made for aircraft manuals. He finds it much easier to read.&lt;/li&gt;&lt;li&gt;Diagrams: ask for a diagram instead of paragraphs.&lt;/li&gt;&lt;li&gt;HTML: ask for an interactive web page.&lt;/li&gt;&lt;li&gt;Video: custom explainer videos. He is most excited about this format.&lt;/li&gt;&lt;li&gt;Note: this site writes its summaries in an STE style because of this post.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-understand-outputs&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2105819303471976479&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Past the pelican test</title>
-      <link>https://example.com/#post-pelican</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-pelican</link>
       <guid isPermaLink="false">karpathy-log-pelican</guid>
       <pubDate>Sun, 02 Aug 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;For a long time, people tested LLMs with one request: draw a pelican on a bicycle as an SVG. Karpathy says this test is now too small. He showed a 3D scene from The Lord of the Rings that Claude Opus 5 made.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The scene used about 5,500 lines of code and cost about $10.&lt;/li&gt;&lt;li&gt;He says LLMs now move towards custom worlds that are made on demand.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-pelican&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2083749667410727319&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=49140998&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;For a long time, people tested LLMs with one request: draw a pelican on a bicycle as an SVG. Karpathy says this test is now too small. He showed a 3D scene from The Lord of the Rings that Claude Opus 5 made.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The scene used about 5,500 lines of code and cost about $10.&lt;/li&gt;&lt;li&gt;He says LLMs now move towards custom worlds that are made on demand.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-pelican&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2083749667410727319&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=49140998&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Karpathy joins Anthropic</title>
-      <link>https://example.com/#post-anthropic</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-anthropic</link>
       <guid isPermaLink="false">karpathy-log-anthropic</guid>
       <pubDate>Tue, 19 May 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy joined Anthropic to go back to research and development at the frontier of LLMs. He works on the pre-training team under Nick Joseph. His new team uses Claude to make pre-training research faster.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He thinks the next few years at the frontier will be 'especially formative'.&lt;/li&gt;&lt;li&gt;He says he still cares deeply about education and plans to return to it later.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-anthropic&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2056753169888334312&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/&quot;&gt;TechCrunch&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=48194352&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy joined Anthropic to go back to research and development at the frontier of LLMs. He works on the pre-training team under Nick Joseph. His new team uses Claude to make pre-training research faster.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He thinks the next few years at the frontier will be 'especially formative'.&lt;/li&gt;&lt;li&gt;He says he still cares deeply about education and plans to return to it later.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-anthropic&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2056753169888334312&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/&quot;&gt;TechCrunch&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=48194352&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>You can outsource your thinking, not your understanding</title>
-      <link>https://example.com/#post-understanding</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-understanding</link>
       <guid isPermaLink="false">karpathy-log-understanding</guid>
       <pubDate>Thu, 30 Apr 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy shared a line by @yacineMTB that he quotes a lot: you can outsource your thinking, but you cannot outsource your understanding.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agents can do much of the work. But you must still understand what to build, why, and how to split the work between agents.&lt;/li&gt;&lt;li&gt;He used the same line in his Sequoia talk on the same day.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-understanding&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2049907410303865030&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy shared a line by @yacineMTB that he quotes a lot: you can outsource your thinking, but you cannot outsource your understanding.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Agents can do much of the work. But you must still understand what to build, why, and how to split the work between agents.&lt;/li&gt;&lt;li&gt;He used the same line in his Sequoia talk on the same day.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-understanding&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2049907410303865030&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sequoia AI Ascent 2026: from vibe coding to agentic engineering</title>
-      <link>https://example.com/#post-sequoia-2026</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-sequoia-2026</link>
       <guid isPermaLink="false">karpathy-log-sequoia-2026</guid>
       <pubDate>Thu, 30 Apr 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A fireside chat with Stephanie Zhan at Sequoia AI Ascent. Karpathy also wrote a summary on his blog. The main ideas are below.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Around December 2025, coding agents became reliable. People could give them large tasks and correct them less.&lt;/li&gt;&lt;li&gt;Software 3.0: you program an LLM with prompts. The context window is the main control.&lt;/li&gt;&lt;li&gt;Verifiability: models improve fastest where success is easy to check, like code, maths and tests.&lt;/li&gt;&lt;li&gt;Vibe coding makes building easy. Agentic engineering adds professional standards: security, correctness and maintenance.&lt;/li&gt;&lt;li&gt;Humans become orchestrators. They write specs, check plans, and supply judgement and taste.&lt;/li&gt;&lt;li&gt;Products should give agents clear interfaces: CLIs, APIs and docs that an agent can copy and use.&lt;/li&gt;&lt;li&gt;LLMs are 'ghosts, not animals'. Learn by experience where they succeed and where they fail.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-sequoia-2026&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/sequoia-ascent-2026/&quot;&gt;Blog summary&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=96jN2OCOfLs&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A fireside chat with Stephanie Zhan at Sequoia AI Ascent. Karpathy also wrote a summary on his blog. The main ideas are below.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Around December 2025, coding agents became reliable. People could give them large tasks and correct them less.&lt;/li&gt;&lt;li&gt;Software 3.0: you program an LLM with prompts. The context window is the main control.&lt;/li&gt;&lt;li&gt;Verifiability: models improve fastest where success is easy to check, like code, maths and tests.&lt;/li&gt;&lt;li&gt;Vibe coding makes building easy. Agentic engineering adds professional standards: security, correctness and maintenance.&lt;/li&gt;&lt;li&gt;Humans become orchestrators. They write specs, check plans, and supply judgement and taste.&lt;/li&gt;&lt;li&gt;Products should give agents clear interfaces: CLIs, APIs and docs that an agent can copy and use.&lt;/li&gt;&lt;li&gt;LLMs are 'ghosts, not animals'. Learn by experience where they succeed and where they fail.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-sequoia-2026&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/sequoia-ascent-2026/&quot;&gt;Blog summary&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=96jN2OCOfLs&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM Wiki: a personal knowledge base that an LLM keeps for you</title>
-      <link>https://example.com/#post-llm-wiki</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-llm-wiki</link>
       <guid isPermaLink="false">karpathy-log-llm-wiki</guid>
       <pubDate>Sat, 04 Apr 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy now spends more tokens on knowledge than on code. He described how an LLM keeps his personal wiki. The LLM writes and updates Markdown pages. He reads them in Obsidian.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;You collect the raw sources. The LLM reads them but never changes them.&lt;/li&gt;&lt;li&gt;The LLM writes the wiki pages, the index and the links between pages. You rarely edit the wiki yourself.&lt;/li&gt;&lt;li&gt;He shared it as an 'idea file' — text, not code. You give the file to your own agent, and it builds a version for you.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-llm-wiki&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f&quot;&gt;The gist&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2039805659525644595&quot;&gt;First post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47640875&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy now spends more tokens on knowledge than on code. He described how an LLM keeps his personal wiki. The LLM writes and updates Markdown pages. He reads them in Obsidian.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;You collect the raw sources. The LLM reads them but never changes them.&lt;/li&gt;&lt;li&gt;The LLM writes the wiki pages, the index and the links between pages. You rarely edit the wiki yourself.&lt;/li&gt;&lt;li&gt;He shared it as an 'idea file' — text, not code. You give the file to your own agent, and it builds a version for you.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-llm-wiki&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f&quot;&gt;The gist&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2039805659525644595&quot;&gt;First post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47640875&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>No Priors: 'Skill issue' — code agents, autoresearch and the loopy era</title>
-      <link>https://example.com/#post-no-priors-2026</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-no-priors-2026</link>
       <guid isPermaLink="false">karpathy-log-no-priors-2026</guid>
       <pubDate>Fri, 20 Mar 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A podcast talk about how Karpathy now gives most of his coding to agents. He also talks about autoresearch and about running agents in loops.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-no-priors-2026&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=kwSVtQ7dziU&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A podcast talk about how Karpathy now gives most of his coding to agents. He also talks about autoresearch and about running agents in loops.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-no-priors-2026&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=kwSVtQ7dziU&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>US Job Market Visualizer</title>
-      <link>https://example.com/#post-jobs</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-jobs</link>
       <guid isPermaLink="false">karpathy-log-jobs</guid>
       <pubDate>Mon, 16 Mar 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;An interactive map of 342 US jobs from Bureau of Labor Statistics data. Together they cover about 143 million jobs. Box size shows how many people do a job. Colour shows the measure you select, for example pay or AI exposure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The README says it is a tool to explore data. It is not a report or a paper.&lt;/li&gt;&lt;li&gt;An LLM gives the AI-exposure scores. All the code is open, so you can change the prompt and score again.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-jobs&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.ai/jobs/&quot;&gt;Live tool&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/jobs&quot;&gt;Code&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47400060&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;An interactive map of 342 US jobs from Bureau of Labor Statistics data. Together they cover about 143 million jobs. Box size shows how many people do a job. Colour shows the measure you select, for example pay or AI exposure.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The README says it is a tool to explore data. It is not a report or a paper.&lt;/li&gt;&lt;li&gt;An LLM gives the AI-exposure scores. All the code is open, so you can change the prompt and score again.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-jobs&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.ai/jobs/&quot;&gt;Live tool&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/jobs&quot;&gt;Code&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47400060&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>autoresearch: let an agent do ML research overnight</title>
-      <link>https://example.com/#post-autoresearch</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-autoresearch</link>
       <guid isPermaLink="false">karpathy-log-autoresearch</guid>
       <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A small repo for an AI agent to do machine-learning research alone. The agent changes one training file and runs a short experiment. It keeps the change only if the result is better. Then it does this again.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It uses a simple single-GPU version of nanochat.&lt;/li&gt;&lt;li&gt;You do not edit the Python files. You edit program.md, the instructions for the agent.&lt;/li&gt;&lt;li&gt;The repo has no agent inside. You use your own, for example Claude Code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-autoresearch&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/autoresearch&quot;&gt;Repo&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47291123&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A small repo for an AI agent to do machine-learning research alone. The agent changes one training file and runs a short experiment. It keeps the change only if the result is better. Then it does this again.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It uses a simple single-GPU version of nanochat.&lt;/li&gt;&lt;li&gt;You do not edit the Python files. You edit program.md, the instructions for the agent.&lt;/li&gt;&lt;li&gt;The repo has no agent inside. You use your own, for example Claude Code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-autoresearch&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/autoresearch&quot;&gt;Repo&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47291123&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claws: a new layer on top of agents</title>
-      <link>https://example.com/#post-claws</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-claws</link>
       <guid isPermaLink="false">karpathy-log-claws</guid>
       <pubDate>Sat, 21 Feb 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy describes 'Claws' as a new layer in the AI stack. Agents sit on top of LLMs. Claws sit on top of agents. They add more scheduling, context, tools and memory over time.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He bought a Mac Mini to try them.&lt;/li&gt;&lt;li&gt;He does not want to run OpenClaw itself. He likes smaller versions, such as NanoClaw (about 4,000 lines, runs in containers).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-claws&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2024987174077432126&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://simonwillison.net/2026/Feb/21/claws/&quot;&gt;Simon Willison's notes&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47096253&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy describes 'Claws' as a new layer in the AI stack. Agents sit on top of LLMs. Claws sit on top of agents. They add more scheduling, context, tools and memory over time.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He bought a Mac Mini to try them.&lt;/li&gt;&lt;li&gt;He does not want to run OpenClaw itself. He likes smaller versions, such as NanoClaw (about 4,000 lines, runs in containers).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-claws&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2024987174077432126&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://simonwillison.net/2026/Feb/21/claws/&quot;&gt;Simon Willison's notes&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47096253&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>microgpt: a whole GPT in one small Python file</title>
-      <link>https://example.com/#post-microgpt</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-microgpt</link>
       <guid isPermaLink="false">karpathy-log-microgpt</guid>
       <pubDate>Thu, 12 Feb 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;microgpt trains and runs a GPT in pure Python, with no libraries. Karpathy calls it the most atomic form of the algorithm. He says everything else is only about efficiency.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The blog post walks through the file step by step.&lt;/li&gt;&lt;li&gt;It is a good first read before nanoGPT or nanochat.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-microgpt&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.github.io/2026/02/12/microgpt/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47202708&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;microgpt trains and runs a GPT in pure Python, with no libraries. Karpathy calls it the most atomic form of the algorithm. He says everything else is only about efficiency.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The blog post walks through the file step by step.&lt;/li&gt;&lt;li&gt;It is a good first read before nanoGPT or nanochat.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-microgpt&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.github.io/2026/02/12/microgpt/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47202708&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes from some weeks of coding with Claude</title>
-      <link>https://example.com/#post-claude-coding-notes</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-claude-coding-notes</link>
       <guid isPermaLink="false">karpathy-log-claude-coding-notes</guid>
       <pubDate>Mon, 26 Jan 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy now writes most of his code in English, by giving instructions to agents. Three months before, he said agents did not work well enough yet.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He says that review skill and writing skill are different. If you only review code, you can lose the skill to write it.&lt;/li&gt;&lt;li&gt;He expects a 'slopacolypse' of low-quality AI content in 2026.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-claude-coding-notes&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2015883857489522876&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=46771564&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy now writes most of his code in English, by giving instructions to agents. Three months before, he said agents did not work well enough yet.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He says that review skill and writing skill are different. If you only review code, you can lose the skill to write it.&lt;/li&gt;&lt;li&gt;He expects a 'slopacolypse' of low-quality AI content in 2026.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-claude-coding-notes&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2015883857489522876&quot;&gt;Post on X&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=46771564&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>“I've never felt this much behind as a programmer”</title>
-      <link>https://example.com/#post-behind</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-behind</link>
       <guid isPermaLink="false">karpathy-log-behind</guid>
       <pubDate>Fri, 26 Dec 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy says the programming job is being rebuilt. Programmers now add only small parts. There is a new layer to learn: agents, subagents, prompts, context, memory, tools, plugins, skills, hooks and MCP.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He thinks he could be 10x more powerful if he connected the new tools well.&lt;/li&gt;&lt;li&gt;His advice: roll up your sleeves, so that you do not fall behind.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-behind&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2004607146781278521&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy says the programming job is being rebuilt. Programmers now add only small parts. There is a new layer to learn: agents, subagents, prompts, context, memory, tools, plugins, skills, hooks and MCP.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He thinks he could be 10x more powerful if he connected the new tools well.&lt;/li&gt;&lt;li&gt;His advice: roll up your sleeves, so that you do not fall behind.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-behind&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/2004607146781278521&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>2025 LLM Year in Review</title>
-      <link>https://example.com/#post-year-review-2025</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-year-review-2025</link>
       <guid isPermaLink="false">karpathy-log-year-review-2025</guid>
       <pubDate>Fri, 19 Dec 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Karpathy lists the changes of 2025 that surprised him most. His main point: LLMs are a new kind of intelligence. They are much smarter than he expected, and also much more stupid.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-year-review-2025&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Karpathy lists the changes of 2025 that surprised him most. His main point: LLMs are a new kind of intelligence. They are much smarter than he expected, and also much more stupid.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-year-review-2025&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Verifiability</title>
-      <link>https://example.com/#post-verifiability</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-verifiability</link>
       <guid isPermaLink="false">karpathy-log-verifiability</guid>
       <pubDate>Mon, 17 Nov 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Models improve fastest on tasks with an automatic check of success, like code, maths and tests. Labs choose what to train on. This is why model skill is 'jagged': very strong in some areas and weak in others.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-verifiability&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/verifiability/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Models improve fastest on tasks with an automatic check of success, like code, maths and tests. Labs choose what to train on. This is why model skill is 'jagged': very strong in some areas and weak in others.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-verifiability&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/verifiability/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dwarkesh Podcast: “AGI is still a decade away”</title>
-      <link>https://example.com/#post-dwarkesh</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-dwarkesh</link>
       <guid isPermaLink="false">karpathy-log-dwarkesh</guid>
       <pubDate>Fri, 17 Oct 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A long interview with Dwarkesh Patel. Karpathy says this is the 'decade of agents', not the 'year of agents'. Agents cannot yet work like an employee or an intern.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Missing parts: continual learning, enough intelligence, multimodality and computer use.&lt;/li&gt;&lt;li&gt;A small 'cognitive core' that only reasons could perhaps fit in about 1 billion parameters.&lt;/li&gt;&lt;li&gt;He sees education as the problem of 'building ramps to knowledge'.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-dwarkesh&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=lXUZvyajciY&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://www.dwarkesh.com/p/andrej-karpathy&quot;&gt;Transcript page&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A long interview with Dwarkesh Patel. Karpathy says this is the 'decade of agents', not the 'year of agents'. Agents cannot yet work like an employee or an intern.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Missing parts: continual learning, enough intelligence, multimodality and computer use.&lt;/li&gt;&lt;li&gt;A small 'cognitive core' that only reasons could perhaps fit in about 1 billion parameters.&lt;/li&gt;&lt;li&gt;He sees education as the problem of 'building ramps to knowledge'.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-dwarkesh&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=lXUZvyajciY&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://www.dwarkesh.com/p/andrej-karpathy&quot;&gt;Transcript page&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>nanochat: build your own small ChatGPT</title>
-      <link>https://example.com/#post-nanochat</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-nanochat</link>
       <guid isPermaLink="false">karpathy-log-nanochat</guid>
       <pubDate>Mon, 13 Oct 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A full pipeline to train and run a simple ChatGPT-style model. It is about 8,000 lines of PyTorch. Karpathy wrote it by hand, because AI coding tools could not do what he needed.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It is the final project for LLM101n, the course that Eureka Labs planned.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-nanochat&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/nanochat&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A full pipeline to train and run a simple ChatGPT-style model. It is about 8,000 lines of PyTorch. Karpathy wrote it by hand, because AI coding tools could not do what he needed.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It is the final project for LLM101n, the course that Eureka Labs planned.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-nanochat&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/nanochat&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Animals vs Ghosts</title>
-      <link>https://example.com/#post-animals-ghosts</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-animals-ghosts</link>
       <guid isPermaLink="false">karpathy-log-animals-ghosts</guid>
       <pubDate>Wed, 01 Oct 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A reply to Richard Sutton's ideas about learning like animals. Karpathy agrees in part. But he says frontier LLMs are not animals. They are 'ghosts' made from human data. Ghosts may relate to animals as planes relate to birds.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-animals-ghosts&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/animals-vs-ghosts/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A reply to Richard Sutton's ideas about learning like animals. Karpathy agrees in part. But he says frontier LLMs are not animals. They are 'ghosts' made from human data. Ghosts may relate to animals as planes relate to birds.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-animals-ghosts&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/animals-vs-ghosts/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>YC AI Startup School: Software is changing (again)</title>
-      <link>https://example.com/#post-yc-2025</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-yc-2025</link>
       <guid isPermaLink="false">karpathy-log-yc-2025</guid>
       <pubDate>Tue, 17 Jun 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;Software 1.0 is code. Software 2.0 is neural network weights. Software 3.0 is prompts to LLMs, written in English. Karpathy says all three will live together.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-yc-2025&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=LCEmiRjPEtQ&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again&quot;&gt;YC summary&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Software 1.0 is code. Software 2.0 is neural network weights. Software 3.0 is prompts to LLMs, written in English. Karpathy says all three will live together.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-yc-2025&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=LCEmiRjPEtQ&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again&quot;&gt;YC summary&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I use LLMs</title>
-      <link>https://example.com/#post-how-i-use-llms</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-how-i-use-llms</link>
       <guid isPermaLink="false">karpathy-log-how-i-use-llms</guid>
       <pubDate>Fri, 28 Feb 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A practical tour of how Karpathy uses LLMs in his own life, with many real examples. For a general audience.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-how-i-use-llms&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=EWvNQjAaOHw&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A practical tour of how Karpathy uses LLMs in his own life, with many real examples. For a general audience.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-how-i-use-llms&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=EWvNQjAaOHw&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deep Dive into LLMs like ChatGPT</title>
-      <link>https://example.com/#post-deep-dive</link>
+      <link>https://rkade159.github.io/karpathy-log/#post-deep-dive</link>
       <guid isPermaLink="false">karpathy-log-deep-dive</guid>
       <pubDate>Wed, 05 Feb 2025 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A 3.5-hour explanation of how LLMs work, from the training data to the finished assistant. No maths or code is necessary.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://example.com/#post-deep-dive&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=7xTGNNLPyMI&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A 3.5-hour explanation of how LLMs work, from the training data to the finished assistant. No maths or code is necessary.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-deep-dive&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=7xTGNNLPyMI&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
