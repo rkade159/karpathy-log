@@ -12,7 +12,7 @@ window.SITE = {
   // Full public address of the site. Used for links in the RSS feed and the emails.
   siteUrl: "",
   // Buttondown username. Buttondown stores subscribers and emails them new posts from feed.xml.
-  buttondown: "",
+  buttondown: "karpathy.log",
   // Show YouTube players and X posts inside the page.
   embeds: true
 };
