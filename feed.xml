@@ -89,7 +89,7 @@
       <link>https://rkade159.github.io/karpathy-log/#post-autoresearch</link>
       <guid isPermaLink="false">karpathy-log-autoresearch</guid>
       <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
-      <description>&lt;p&gt;A small repo for an AI agent to do machine-learning research alone. The agent changes one training file and runs a short experiment. It keeps the change only if the result is better. Then it does this again.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It uses a simple single-GPU version of nanochat.&lt;/li&gt;&lt;li&gt;You do not edit the Python files. You edit program.md, the instructions for the agent.&lt;/li&gt;&lt;li&gt;The repo has no agent inside. You use your own, for example Claude Code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-autoresearch&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/autoresearch&quot;&gt;Repo&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47291123&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A small repo for an AI agent to do machine-learning research alone. The agent changes one training file and runs a short experiment. It keeps the change only if the result is better. Then it does this again.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It uses a simple single-GPU version of nanochat.&lt;/li&gt;&lt;li&gt;You do not edit the Python files. You edit program.md, the instructions for the agent.&lt;/li&gt;&lt;li&gt;The repo has no agent inside. You use your own, for example Claude Code.&lt;/li&gt;&lt;li&gt;People later called this pattern 'the Karpathy loop'. The terms 'loop engineering' and 'graph engineering' came from the community in mid-2026. Karpathy did not use them.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-autoresearch&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/autoresearch&quot;&gt;Repo&lt;/a&gt; · &lt;a href=&quot;https://news.ycombinator.com/item?id=47291123&quot;&gt;HN discussion&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claws: a new layer on top of agents</title>
@@ -127,6 +127,20 @@
       <description>&lt;p&gt;Karpathy lists the changes of 2025 that surprised him most. His main point: LLMs are a new kind of intelligence. They are much smarter than he expected, and also much more stupid.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-year-review-2025&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/year-in-review-2025/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Auto-grading decade-old Hacker News discussions with hindsight</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-auto-grade-hn</link>
+      <guid isPermaLink="false">karpathy-log-auto-grade-hn</guid>
+      <pubDate>Wed, 10 Dec 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy asked an LLM to grade old Hacker News comments. The model read 930 front-page threads from December 2015. Then it judged which comments were right about the future and which were wrong.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He built it with an AI coding agent in a few hours. The analysis cost about $60.&lt;/li&gt;&lt;li&gt;A 'Hall of Fame' ranks the most far-sighted commenters.&lt;/li&gt;&lt;li&gt;Example threads: Swift going open source, the launch of Figma, and the first announcement of OpenAI.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-auto-grade-hn&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/auto-grade-hn/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://karpathy.ai/hncapsule/&quot;&gt;HN time capsule&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLM Council: ask several models, then let them review each other</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-llm-council</link>
+      <guid isPermaLink="false">karpathy-log-llm-council</guid>
+      <pubDate>Sat, 22 Nov 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A small web app. You ask one question to several frontier models. Each model then reviews the other answers. A 'chairman' model writes the final answer.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He calls it a weekend hack. He says he will not maintain it.&lt;/li&gt;&lt;li&gt;He used it while reading books together with LLMs.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-llm-council&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/llm-council&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Verifiability</title>
       <link>https://rkade159.github.io/karpathy-log/#post-verifiability</link>
       <guid isPermaLink="false">karpathy-log-verifiability</guid>
@@ -155,11 +169,39 @@
       <description>&lt;p&gt;A reply to Richard Sutton's ideas about learning like animals. Karpathy agrees in part. But he says frontier LLMs are not animals. They are 'ghosts' made from human data. Ghosts may relate to animals as planes relate to birds.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-animals-ghosts&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/animals-vs-ghosts/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>'Context engineering', not 'prompt engineering'</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-context-engineering</link>
+      <guid isPermaLink="false">karpathy-log-context-engineering</guid>
+      <pubDate>Wed, 25 Jun 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy agreed with Shopify CEO Tobi Lütke: 'context engineering' is a better name than 'prompt engineering'. A prompt sounds like a short question. Real LLM apps must fill the whole context window with the right information for the next step.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The term spread fast after his post.&lt;/li&gt;&lt;li&gt;It connects to his 'LLM OS' idea: the context window is like the computer's working memory.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-context-engineering&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://simonwillison.net/2025/Jun/27/context-engineering/&quot;&gt;Simon Willison's notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>YC AI Startup School: Software is changing (again)</title>
       <link>https://rkade159.github.io/karpathy-log/#post-yc-2025</link>
       <guid isPermaLink="false">karpathy-log-yc-2025</guid>
       <pubDate>Tue, 17 Jun 2025 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;Software 1.0 is code. Software 2.0 is neural network weights. Software 3.0 is prompts to LLMs, written in English. Karpathy says all three will live together.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-yc-2025&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=LCEmiRjPEtQ&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again&quot;&gt;YC summary&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vibe coding MenuGen</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-menugen</link>
+      <guid isPermaLink="false">karpathy-log-menugen</guid>
+      <pubDate>Sun, 27 Apr 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;MenuGen turns a photo of a restaurant menu into pictures of each dish. Karpathy vibe coded it with almost no web experience. The first local demo was fast and fun. Making it a real app was a slow, painful job.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The hard parts were not the code. They were hosting, the domain name, logins, payments and many service dashboards.&lt;/li&gt;&lt;li&gt;He asks services to become easier for LLMs to use, for example with clear docs and command-line tools.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-menugen&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/vibe-coding-menugen/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://www.menugen.app/&quot;&gt;MenuGen&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power to the people: how LLMs flip technology diffusion</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-power-to-the-people</link>
+      <guid isPermaLink="false">karpathy-log-power-to-the-people</guid>
+      <pubDate>Mon, 07 Apr 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;New technology usually goes from governments to companies, and only then to normal people. Electricity, computers, the internet and GPS all followed this path. Karpathy says LLMs went the other way. Normal people got the biggest benefit first.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He thinks the future is here and, for once, it is spread very widely.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-power-to-the-people&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/power-to-the-people/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The append-and-review note</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-append-and-review</link>
+      <guid isPermaLink="false">karpathy-log-append-and-review</guid>
+      <pubDate>Wed, 19 Mar 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy keeps one single note in Apple Notes, called 'notes'. He adds every new idea or to-do at the top, as plain text. Old items sink down over time. He reviews the note and moves important items back to the top.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;One note means no folders and simple search.&lt;/li&gt;&lt;li&gt;It is an early form of his later 'LLM Wiki' idea (April 2026).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-append-and-review&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.bearblog.dev/the-append-and-review-note/&quot;&gt;Blog post&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I use LLMs</title>
@@ -174,6 +216,146 @@
       <guid isPermaLink="false">karpathy-log-deep-dive</guid>
       <pubDate>Wed, 05 Feb 2025 12:00:00 GMT</pubDate>
       <description>&lt;p&gt;A 3.5-hour explanation of how LLMs work, from the training data to the finished assistant. No maths or code is necessary.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-deep-dive&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=7xTGNNLPyMI&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The post that named 'vibe coding'</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-vibe-coding</link>
+      <guid isPermaLink="false">karpathy-log-vibe-coding</guid>
+      <pubDate>Sun, 02 Feb 2025 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy described a new way to code: you talk to an AI tool, accept what it writes, and stop reading the code. He called it 'vibe coding'. The term spread around the world in weeks.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He said it is good for quick weekend projects, not serious software.&lt;/li&gt;&lt;li&gt;In 2026 he said 'agentic engineering' is the next step: agents with professional standards.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-vibe-coding&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/1886192184808149383&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jagged intelligence</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-jagged-intelligence</link>
+      <guid isPermaLink="false">karpathy-log-jagged-intelligence</guid>
+      <pubDate>Thu, 25 Jul 2024 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy gave a name to a strange fact. Top LLMs can solve very hard maths problems. But they can fail at very easy tasks, for example saying 9.11 is bigger than 9.9.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Their skill is not smooth like a human's. It is 'jagged'.&lt;/li&gt;&lt;li&gt;He says this is not a fatal flaw, but you must know where the gaps are.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-jagged-intelligence&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/1816531576228053133&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Karpathy starts Eureka Labs</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-eureka-labs</link>
+      <guid isPermaLink="false">karpathy-log-eureka-labs</guid>
+      <pubDate>Tue, 16 Jul 2024 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy announced Eureka Labs, 'a new kind of school that is AI native'. Human teachers design the course. AI teaching assistants help each student work through it.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The first planned course is LLM101n: build your own small LLM, step by step.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-eureka-labs&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://eurekalabs.ai/&quot;&gt;Eureka Labs&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/LLM101n&quot;&gt;LLM101n outline&lt;/a&gt; · &lt;a href=&quot;https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Let's reproduce GPT-2 (124M)</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-reproduce-gpt2</link>
+      <guid isPermaLink="false">karpathy-log-reproduce-gpt2</guid>
+      <pubDate>Sun, 09 Jun 2024 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A 4-hour lecture. Karpathy starts with an empty file and ends with a trained GPT-2 (124M). First he builds the network. Then he makes training fast. Then he runs it and checks the results.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He says the run takes about an hour on cloud GPUs and costs about $10.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-reproduce-gpt2&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=l8pRSuU81PU&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/build-nanogpt&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>llm.c: train GPT-2 in plain C and CUDA</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-llm-c</link>
+      <guid isPermaLink="false">karpathy-log-llm-c</guid>
+      <pubDate>Mon, 08 Apr 2024 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;llm.c trains GPT-2 without PyTorch or Python. The first version was about 1,000 lines of C. Later he moved it to CUDA so that it runs fast on GPUs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Later the team reproduced the full GPT-2 (1.5B) on one 8-GPU node in 24 hours, for about $672.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-llm-c&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/llm.c&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Let's build the GPT Tokenizer</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-tokenizer</link>
+      <guid isPermaLink="false">karpathy-log-tokenizer</guid>
+      <pubDate>Tue, 20 Feb 2024 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A 2-hour lecture on tokenizers: the part that turns text into numbers for an LLM. Karpathy builds the GPT tokenizer from scratch with Byte Pair Encoding.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He shows that many strange LLM mistakes come from tokenization, for example with spelling, numbers and non-English text.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-tokenizer&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=zduSFxRajkE&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/minbpe&quot;&gt;minbpe code&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Karpathy leaves OpenAI for the second time</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-left-openai</link>
+      <guid isPermaLink="false">karpathy-log-left-openai</guid>
+      <pubDate>Wed, 14 Feb 2024 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;One year after he returned, Karpathy left OpenAI again. He said there was no drama. He wanted to work on personal projects.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-left-openai&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLMs are 'dream machines'</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-dream-machines</link>
+      <guid isPermaLink="false">karpathy-log-dream-machines</guid>
+      <pubDate>Sat, 09 Dec 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy says that, in a way, hallucination is all LLMs do. Prompts start a 'dream'. Usually the dream goes somewhere useful. We only call it a hallucination when it goes somewhere false.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;His point: the LLM itself has no hallucination problem. The LLM assistant does, and we should fix that.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-dream-machines&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/1733299213503787018&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intro to Large Language Models (1-hour talk)</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-intro-llms</link>
+      <guid isPermaLink="false">karpathy-log-intro-llms</guid>
+      <pubDate>Thu, 23 Nov 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A general-audience talk. An LLM is just two files: the weights and a small program that runs them. Karpathy explains training, fine-tuning, the future of LLMs and their security risks.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Here he explains the 'LLM OS' idea: the LLM is like the kernel of a new operating system.&lt;/li&gt;&lt;li&gt;The context window is like RAM. Tools and other models are like devices.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-intro-llms&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=zjkBMFhNj_g&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>llama2.c: run a Llama 2 model in one file of C</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-llama2c</link>
+      <guid isPermaLink="false">karpathy-log-llama2c</guid>
+      <pubDate>Sun, 23 Jul 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A weekend project. Karpathy took nanoGPT and changed it to the Llama 2 design. Then he wrote one 700-line C file that runs the model, with no dependencies.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Small models run at interactive speed, even on a normal CPU.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-llama2c&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/llama2.c&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>State of GPT (Microsoft Build)</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-state-of-gpt</link>
+      <guid isPermaLink="false">karpathy-log-state-of-gpt</guid>
+      <pubDate>Tue, 23 May 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy explains how a ChatGPT-style assistant is trained, in four steps: pretraining, supervised fine-tuning, reward modelling and reinforcement learning. Then he explains how to use these models well.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Almost all of the compute goes into pretraining.&lt;/li&gt;&lt;li&gt;His advice in 2023: use LLMs for low-stakes tasks, with a human checking the work.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-state-of-gpt&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=bZQun8Y4L2A&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Karpathy returns to OpenAI</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-rejoins-openai</link>
+      <guid isPermaLink="false">karpathy-log-rejoins-openai</guid>
+      <pubDate>Thu, 09 Feb 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy announced that he was going back to OpenAI, where he was a founding member. He said the work there and its future potential excited him.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-rejoins-openai&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://en.wikipedia.org/wiki/Andrej_Karpathy&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>'The hottest new programming language is English'</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-english-language</link>
+      <guid isPermaLink="false">karpathy-log-english-language</guid>
+      <pubDate>Tue, 24 Jan 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A very famous six-word post. Karpathy said that people can now program computers in plain English, by giving instructions to LLMs.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;In a follow-up he said this could grow the number of programmers to about 1.5 billion people.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-english-language&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://x.com/karpathy/status/1617979122625712128&quot;&gt;Post on X&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Let's build GPT: from scratch, in code, spelled out</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-lets-build-gpt</link>
+      <guid isPermaLink="false">karpathy-log-lets-build-gpt</guid>
+      <pubDate>Tue, 17 Jan 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;His most famous lecture. Karpathy builds a small GPT from an empty file, following the 'Attention is All You Need' paper. He trains it on Shakespeare.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It is lecture 7 of Neural Networks: Zero to Hero.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-lets-build-gpt&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=kCc8FmEb1nY&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/ng-video-lecture&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>nanoGPT: the simplest, fastest repo to train medium-sized GPTs</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-nanogpt</link>
+      <guid isPermaLink="false">karpathy-log-nanogpt</guid>
+      <pubDate>Wed, 11 Jan 2023 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A rewrite of minGPT that puts speed first. It has two main files of about 300 lines each. It reproduced GPT-2 (124M) on OpenWebText.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;It became a standard base for many research projects.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-nanogpt&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/nanoGPT&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lex Fridman Podcast #333</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-lex-333</link>
+      <guid isPermaLink="false">karpathy-log-lex-333</guid>
+      <pubDate>Sat, 29 Oct 2022 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A 3.5-hour talk after Karpathy left Tesla. Topics: neural networks, Tesla Autopilot, Software 2.0, transformers, robots, aliens and AGI.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;He calls the transformer a general-purpose computer that you can train.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-lex-333&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=cdiD-9MMpb0&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The makemore series (5 lectures)</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-makemore</link>
+      <guid isPermaLink="false">karpathy-log-makemore</guid>
+      <pubDate>Wed, 07 Sep 2022 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;A series of lectures that builds a character-level language model. It starts with simple counting and grows step by step into a deeper network.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Part 1 (7 Sep 2022): a bigram model.&lt;/li&gt;&lt;li&gt;Part 2 (12 Sep): an MLP. Part 3 (4 Oct): activations, gradients and BatchNorm.&lt;/li&gt;&lt;li&gt;Part 4 (11 Oct): backprop by hand. Part 5 (21 Nov): a WaveNet.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-makemore&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=PaCmpygFfXo&quot;&gt;Part 1&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/makemore&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building micrograd: neural networks and backpropagation</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-micrograd-video</link>
+      <guid isPermaLink="false">karpathy-log-micrograd-video</guid>
+      <pubDate>Tue, 16 Aug 2022 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;The first Zero to Hero lecture. Karpathy builds a tiny autograd engine from nothing. He shows that a neural network is only a big maths expression, trained with backpropagation.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;You need only basic Python and a little calculus.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-micrograd-video&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.youtube.com/watch?v=VMj-3S1tku0&quot;&gt;Video&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/micrograd&quot;&gt;micrograd&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Karpathy leaves Tesla</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-left-tesla</link>
+      <guid isPermaLink="false">karpathy-log-left-tesla</guid>
+      <pubDate>Wed, 13 Jul 2022 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;After five years and a few months on sabbatical, Karpathy left Tesla. He said Autopilot had grown from lane keeping to city streets. He had no concrete plans. He wanted more time for technical work in AI, open source and education.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-left-tesla&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://www.cnbc.com/2022/07/13/tesla-ai-leader-andrej-karpathy-announces-hes-leaving-the-company.html&quot;&gt;CNBC&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deep Neural Nets: 33 years ago and 33 years from now</title>
+      <link>https://rkade159.github.io/karpathy-log/#post-lecun1989</link>
+      <guid isPermaLink="false">karpathy-log-lecun1989</guid>
+      <pubDate>Mon, 14 Mar 2022 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Karpathy reproduced LeCun's 1989 paper on reading handwritten zip codes. It is perhaps the first real use of a network trained end to end with backpropagation. Then he used modern tricks to cut its errors by about 60%.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Training that took days in 1989 took about 90 seconds on his laptop.&lt;/li&gt;&lt;li&gt;He predicts that in 2055 people will rarely train networks from zero. They will adapt large foundation models.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://rkade159.github.io/karpathy-log/#post-lecun1989&quot;&gt;Read on karpathy.log&lt;/a&gt; · &lt;a href=&quot;https://karpathy.github.io/2022/03/14/lecun1989/&quot;&gt;Blog post&lt;/a&gt; · &lt;a href=&quot;https://github.com/karpathy/lecun1989-repro&quot;&gt;Code&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -140,6 +140,25 @@ footer { max-width: var(--max); margin: 0 auto; padding: 24px 20px 48px; border-
 .count { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); margin: 6px 0 0; min-height: 1.2em; }
 .empty { padding: 28px 0; color: var(--muted); }
 
+/* Date filter */
+.datefilter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0 4px; font-size: .9rem; }
+.datefilter .df-label { font-family: var(--font-mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-right: 2px; }
+.datefilter select, .datefilter input[type=date] { font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--line); padding: 5px 8px; }
+.datefilter .df-cal { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+.datefilter button { font: inherit; border: 1px solid var(--ink); padding: 5px 14px; cursor: pointer; }
+.datefilter .df-apply { background: var(--ink); color: var(--bg); }
+.datefilter .df-clear { background: transparent; color: var(--ink); border-color: var(--line); }
+.year { font-family: var(--font-head); font-size: 1.6rem; font-weight: 600; margin: 2.6rem 0 -.6rem; }
+
+/* Find on page */
+.finder { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--bg); padding: 8px 0; margin-bottom: 8px; border-bottom: 1px solid var(--line); }
+.finder .search { flex: 1 1 240px; margin: 0; }
+.finder button { font: inherit; font-size: .88rem; background: transparent; color: var(--ink); border: 1px solid var(--line); padding: 8px 12px; cursor: pointer; }
+.finder button:disabled { opacity: .4; cursor: default; }
+.find-count { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); min-width: 6.5em; text-align: right; }
+mark.hit { background: color-mix(in srgb, var(--accent) 28%, transparent); color: inherit; padding: 0 1px; }
+mark.hit.current { background: var(--brand); color: var(--on-brand); }
+
 /* ---------- Newsletter ---------- */
 .subscribe { border: 1px solid var(--line); border-left: 4px solid var(--brand); padding: 18px 20px; margin-top: 2.4rem; }
 .subscribe h2 { margin: 0 0 .3em; font-size: 1.2rem; }
@@ -152,6 +171,8 @@ footer { max-width: var(--max); margin: 0 auto; padding: 24px 20px 48px; border-
 .subscribe .msg { font-size: .9rem; margin: 8px 0 0; }
 
 @media (max-width: 600px) {
+  .find-count { min-width: 0; }
+  .datefilter .df-cal span { display: none; }
   body { font-size: 16px; }
   h1 { font-size: 1.6rem; }
   .ideas { grid-template-columns: 1fr; }

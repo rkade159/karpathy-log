@@ -7,6 +7,7 @@ const vm = require("vm");
 const ctx = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(__dirname, "data.js"), "utf8"), ctx);
 const { SITE, POSTS } = ctx.window;
+POSTS.sort((x, y) => y.date.localeCompare(x.date));
 
 const base = (SITE.siteUrl || "https://example.com/").replace(/\/?$/, "/");
 const x = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

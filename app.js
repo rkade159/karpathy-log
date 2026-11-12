@@ -1,5 +1,7 @@
 (function () {
   "use strict";
+  window.POSTS.sort((x, y) => y.date.localeCompare(x.date));
+  window.ARCHIVE.sort((x, y) => y.date.localeCompare(x.date));
   const S = window.SITE, POSTS = window.POSTS, ARCHIVE = window.ARCHIVE, RES = window.RESOURCES, ABOUT = window.ABOUT;
   const main = document.getElementById("main");
 
@@ -151,13 +153,39 @@
       <a class="more" href="#posts">All posts →</a>`;
   }
 
+  /* Date filter: Year / Month / Day. Applied only when the reader presses Filter. */
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  let dateF = { y: "", m: "", d: "" };
+  const YEARS = [...new Set(POSTS.map(p => p.date.slice(0, 4)).concat(ARCHIVE.map(a => a.date.slice(0, 4))))].sort().reverse();
+  const inDate = d => (!dateF.y || d.slice(0, 4) === dateF.y) && (!dateF.m || d.slice(5, 7) === dateF.m) && (!dateF.d || d.slice(8, 10) === dateF.d);
+  const dateLabel = () => {
+    if (!dateF.y && !dateF.m && !dateF.d) return "";
+    const parts = [];
+    if (dateF.d) parts.push(String(+dateF.d));
+    if (dateF.m) parts.push(MONTHS[+dateF.m - 1]);
+    if (dateF.y) parts.push(dateF.y);
+    return (dateF.d && dateF.m && dateF.y ? "on " : "from ") + parts.join(" ") + (dateF.y ? "" : " (any year)");
+  };
+  const opt = (v, label, cur) => `<option value="${v}"${v === cur ? " selected" : ""}>${label}</option>`;
+
   function posts() {
+    const first = [...POSTS, ...ARCHIVE].map(p => p.date).sort()[0], last = [...POSTS].map(p => p.date).sort().pop();
     return `<h1>Posts</h1>
-      <p class="muted">Everything we have collected, newest first. ${POSTS.length} summaries.</p>
+      <p class="muted">Everything we have collected, newest first. ${POSTS.length} summaries, from ${monthOf(first)} to ${monthOf(last)}.</p>
       <input id="search" class="search" type="search" placeholder="Search posts — e.g. agents, nanochat, &quot;vibe coding&quot;" aria-label="Search posts" autocomplete="off" value="${esc(query)}">
-      <div class="filters" role="group" aria-label="Filter posts">
+      <div class="filters" role="group" aria-label="Filter by type">
         ${FILTERS.map(x => `<button type="button" data-filter="${x.key}" aria-pressed="${x.key === filter}">${x.label}</button>`).join("")}
       </div>
+      <form class="datefilter" id="datefilter" aria-label="Filter by date">
+        <span class="df-label">Date</span>
+        <select id="f-year" aria-label="Year">${opt("", "Any year", dateF.y)}${YEARS.map(y => opt(y, y, dateF.y)).join("")}</select>
+        <select id="f-month" aria-label="Month">${opt("", "Any month", dateF.m)}${MONTHS.map((m, i) => opt(String(i + 1).padStart(2, "0"), m, dateF.m)).join("")}</select>
+        <select id="f-day" aria-label="Day">${opt("", "Any day", dateF.d)}${Array.from({ length: 31 }, (_, i) => opt(String(i + 1).padStart(2, "0"), String(i + 1), dateF.d)).join("")}</select>
+        <label class="df-cal" title="Pick a day on a calendar"><span>or</span>
+          <input type="date" id="f-date" min="${first}" max="${last}" value="${dateF.y && dateF.m && dateF.d ? `${dateF.y}-${dateF.m}-${dateF.d}` : ""}"></label>
+        <button type="submit" class="df-apply">Filter</button>
+        <button type="button" class="df-clear" id="f-clear">Clear</button>
+      </form>
       <p class="count" id="count" aria-live="polite"></p>
       <div id="results"></div>`;
   }
@@ -167,24 +195,28 @@
     if (!box) return;
     const f = FILTERS.find(x => x.key === filter);
     const q = norm(query.trim());
-    const list = INDEX.filter(({ p, text }) => (!f.types || f.types.includes(p.type)) && (!q || matches(text, q))).map(x => x.p);
+    const list = INDEX.filter(({ p, text }) => (!f.types || f.types.includes(p.type)) && inDate(p.date) && (!q || matches(text, q))).map(x => x.p);
     const showArchive = filter === "all" || filter === "writing";
-    const arch = showArchive ? ARCHIVE.filter(a => !q || matches(norm(a.title + " " + fmt(a.date)), q)) : [];
+    const arch = showArchive ? ARCHIVE.filter(a => inDate(a.date) && (!q || matches(norm(a.title + " " + fmt(a.date)), q))) : [];
 
-    let out = "", month = "";
+    let out = "", month = "", year = "";
     for (const p of list) {
-      const m = monthOf(p.date);
+      const y = p.date.slice(0, 4), m = monthOf(p.date);
+      if (y !== year) { out += `<div class="year">${y}</div>`; year = y; }
       if (m !== month) { out += `<div class="month">${m}</div>`; month = m; }
       out += postHtml(p);
     }
     if (arch.length) {
-      out += `<h2>More from his blog</h2>
+      out += `<h2>More from his blogs</h2>
         <p class="muted">Listed here. Summaries to come.</p>
         <ul class="archive">${arch.map(a => `<li><time>${fmt(a.date)}</time><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></li>`).join("")}</ul>`;
     }
     if (!list.length && !arch.length) out = `<p class="empty">No posts found.</p>`;
     box.innerHTML = out;
-    document.getElementById("count").textContent = q ? `${list.length + arch.length} result${list.length + arch.length === 1 ? "" : "s"} for ${query.includes('"') ? query.trim() : "“" + query.trim() + "”"}` : "";
+    const n = list.length + arch.length, bits = [];
+    if (q) bits.push(`for ${query.includes('"') ? query.trim() : "“" + query.trim() + "”"}`);
+    if (dateLabel()) bits.push(dateLabel());
+    document.getElementById("count").textContent = bits.length ? `${n} result${n === 1 ? "" : "s"} ${bits.join(" ")}` : "";
     enhance(box);
   }
 
@@ -192,6 +224,13 @@
     const slug = t => "r-" + t.toLowerCase().replace(/[^a-z0-9]+/g, "-");
     return `<h1>Materials &amp; resources</h1>
       <p class="muted">His free courses, videos, code and essays, sorted so you can work through them one by one.</p>
+      <div class="finder" role="search">
+        <input id="find" class="search" type="search" placeholder="Find on this page — e.g. tokenizer, backprop, CS231n" aria-label="Find on this page" autocomplete="off">
+        <span class="find-count" id="find-count" aria-live="polite"></span>
+        <button type="button" id="find-prev" aria-label="Previous match" disabled>↑ Back</button>
+        <button type="button" id="find-next" aria-label="Next match" disabled>Next ↓</button>
+      </div>
+      <div id="res-body">
       <ol class="toc">${RES.map(s => `<li><a href="#resources" data-jump="${slug(s.title)}">${esc(s.title)}</a></li>`).join("")}</ol>
       ${RES.map(s => `
         <section class="res" id="${slug(s.title)}">
@@ -204,7 +243,58 @@
               return `<li><div><a href="${esc(url)}" target="_blank" rel="noopener">${esc(it.title)}</a>${it.video ? '<span class="yt">▶ video</span>' : ""}<span class="it-meta">${esc(it.meta || "")}</span></div></li>`;
             }).join("")}
           </ul>
-        </section>`).join("")}`;
+        </section>`).join("")}
+      </div>`;
+  }
+
+  /* Find on page (like Ctrl+F): highlight every match, step through them with Next / Back. */
+  let hits = [], hitIdx = -1;
+  function clearHits(root) {
+    root.querySelectorAll("mark.hit").forEach(m => m.replaceWith(document.createTextNode(m.textContent)));
+    root.normalize();
+    hits = []; hitIdx = -1;
+  }
+  function runFind(term) {
+    const root = document.getElementById("res-body");
+    if (!root) return;
+    clearHits(root);
+    const t = term.trim().toLowerCase();
+    if (t) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode: n => n.nodeValue.toLowerCase().includes(t) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+      });
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      for (const node of nodes) {
+        const text = node.nodeValue, low = text.toLowerCase(), frag = document.createDocumentFragment();
+        let i = 0, j;
+        while ((j = low.indexOf(t, i)) !== -1) {
+          if (j > i) frag.appendChild(document.createTextNode(text.slice(i, j)));
+          const m = document.createElement("mark");
+          m.className = "hit"; m.textContent = text.slice(j, j + t.length);
+          frag.appendChild(m); hits.push(m);
+          i = j + t.length;
+        }
+        if (i < text.length) frag.appendChild(document.createTextNode(text.slice(i)));
+        node.replaceWith(frag);
+      }
+    }
+    if (hits.length) goHit(0); else updateFindUI(t);
+  }
+  function goHit(i) {
+    if (!hits.length) return;
+    if (hitIdx >= 0 && hits[hitIdx]) hits[hitIdx].classList.remove("current");
+    hitIdx = (i + hits.length) % hits.length;
+    const m = hits[hitIdx];
+    m.classList.add("current");
+    m.scrollIntoView({ block: "center" });
+    updateFindUI("x");
+  }
+  function updateFindUI(t) {
+    const c = document.getElementById("find-count");
+    if (!c) return;
+    c.textContent = !t ? "" : hits.length ? `${hitIdx + 1} of ${hits.length}` : "No matches";
+    document.getElementById("find-prev").disabled = document.getElementById("find-next").disabled = hits.length < 2;
   }
 
   function about() {
@@ -214,6 +304,8 @@
       <ul class="timeline">${ABOUT.timeline.map(t => `<li><span class="when">${esc(t.when)}</span>${esc(t.what)}</li>`).join("")}</ul>
       <h2>Ideas he is known for</h2>
       <div class="ideas">${ABOUT.ideas.map(i => `<div class="idea"><h3>${esc(i.name)}</h3><p>${esc(i.text)}</p></div>`).join("")}</div>
+      <h2>Terms people link to him, but are not his</h2>
+      <p>Some popular terms carry his name but did not come from him. 'Loop engineering' and 'graph engineering' came from the builder community in mid-2026. They build on his autoresearch project, which people call 'the Karpathy loop'. A viral 'LOOPS.md' file and a 'graph engineering' PDF were also linked to him, but we found no proof that he wrote them. We list only work that we can trace to him.</p>
       <h2>Sources</h2>
       <p class="links">
         <a href="https://karpathy.ai/" target="_blank" rel="noopener">karpathy.ai</a>
@@ -231,7 +323,7 @@
   /* ---------- Router: #home, #posts, #resources, #about, #post-<id> ---------- */
   function route(jump) {
     let page = (location.hash || "#home").slice(1);
-    if (page.startsWith("post-")) { jump = page; page = "posts"; filter = "all"; query = ""; }
+    if (page.startsWith("post-")) { jump = page; page = "posts"; filter = "all"; query = ""; dateF = { y: "", m: "", d: "" }; }
     if (!PAGES[page]) page = "home";
     main.innerHTML = PAGES[page]();
     document.querySelectorAll("nav a").forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + page ? "page" : "false"));
@@ -271,6 +363,24 @@
 
   document.addEventListener("input", e => {
     if (e.target.id === "search") { query = e.target.value; renderResults(); }
+    if (e.target.id === "find") runFind(e.target.value);
+  });
+  document.addEventListener("keydown", e => {
+    if (e.target.id === "find" && e.key === "Enter") { e.preventDefault(); goHit(hitIdx + (e.shiftKey ? -1 : 1)); }
+  });
+  document.addEventListener("change", e => {
+    if (e.target.id === "f-date" && e.target.value) {
+      const [y, m, d] = e.target.value.split("-");
+      document.getElementById("f-year").value = y;
+      document.getElementById("f-month").value = m;
+      document.getElementById("f-day").value = d;
+    }
+  });
+  document.addEventListener("submit", e => {
+    if (e.target.id !== "datefilter") return;
+    e.preventDefault();
+    dateF = { y: document.getElementById("f-year").value, m: document.getElementById("f-month").value, d: document.getElementById("f-day").value };
+    renderResults();
   });
   document.addEventListener("click", e => {
     const fb = e.target.closest("[data-filter]");
@@ -285,6 +395,13 @@
       e.preventDefault();
       const el = document.getElementById(j.dataset.jump);
       if (el) el.scrollIntoView({ block: "start" });
+    }
+    if (e.target.id === "find-next") goHit(hitIdx + 1);
+    if (e.target.id === "find-prev") goHit(hitIdx - 1);
+    if (e.target.id === "f-clear") {
+      dateF = { y: "", m: "", d: "" };
+      ["f-year", "f-month", "f-day", "f-date"].forEach(id => { document.getElementById(id).value = ""; });
+      renderResults();
     }
     const t = e.target.closest("[data-set-theme]");
     if (t) setTheme(t.dataset.setTheme, true);

@@ -212,7 +212,8 @@ window.POSTS = [
     points: [
       "It uses a simple single-GPU version of nanochat.",
       "You do not edit the Python files. You edit program.md, the instructions for the agent.",
-      "The repo has no agent inside. You use your own, for example Claude Code."
+      "The repo has no agent inside. You use your own, for example Claude Code.",
+      "People later called this pattern 'the Karpathy loop'. The terms 'loop engineering' and 'graph engineering' came from the community in mid-2026. Karpathy did not use them."
     ],
     links: [
       { label: "Repo", url: "https://github.com/karpathy/autoresearch" },
@@ -384,15 +385,313 @@ window.POSTS = [
   }
 ];
 
+/* ---------- Back catalogue, 2020–2025 (added 12 Nov 2026). The site sorts all posts by date. ---------- */
+window.POSTS = window.POSTS.concat([
+  {
+    id: "auto-grade-hn", date: "2025-12-10", type: "blog",
+    title: "Auto-grading decade-old Hacker News discussions with hindsight",
+    summary: "Karpathy asked an LLM to grade old Hacker News comments. The model read 930 front-page threads from December 2015. Then it judged which comments were right about the future and which were wrong.",
+    points: [
+      "He built it with an AI coding agent in a few hours. The analysis cost about $60.",
+      "A 'Hall of Fame' ranks the most far-sighted commenters.",
+      "Example threads: Swift going open source, the launch of Figma, and the first announcement of OpenAI."
+    ],
+    links: [
+      { label: "Blog post", url: "https://karpathy.bearblog.dev/auto-grade-hn/" },
+      { label: "HN time capsule", url: "https://karpathy.ai/hncapsule/" }
+    ]
+  },
+  {
+    id: "llm-council", date: "2025-11-22", type: "repo",
+    title: "LLM Council: ask several models, then let them review each other",
+    summary: "A small web app. You ask one question to several frontier models. Each model then reviews the other answers. A 'chairman' model writes the final answer.",
+    points: [
+      "He calls it a weekend hack. He says he will not maintain it.",
+      "He used it while reading books together with LLMs."
+    ],
+    links: [ { label: "Repo", url: "https://github.com/karpathy/llm-council" } ]
+  },
+  {
+    id: "context-engineering", date: "2025-06-25", type: "x",
+    title: "'Context engineering', not 'prompt engineering'",
+    summary: "Karpathy agreed with Shopify CEO Tobi Lütke: 'context engineering' is a better name than 'prompt engineering'. A prompt sounds like a short question. Real LLM apps must fill the whole context window with the right information for the next step.",
+    points: [
+      "The term spread fast after his post.",
+      "It connects to his 'LLM OS' idea: the context window is like the computer's working memory."
+    ],
+    links: [ { label: "Simon Willison's notes", url: "https://simonwillison.net/2025/Jun/27/context-engineering/" } ]
+  },
+  {
+    id: "menugen", date: "2025-04-27", type: "blog",
+    title: "Vibe coding MenuGen",
+    summary: "MenuGen turns a photo of a restaurant menu into pictures of each dish. Karpathy vibe coded it with almost no web experience. The first local demo was fast and fun. Making it a real app was a slow, painful job.",
+    points: [
+      "The hard parts were not the code. They were hosting, the domain name, logins, payments and many service dashboards.",
+      "He asks services to become easier for LLMs to use, for example with clear docs and command-line tools."
+    ],
+    links: [
+      { label: "Blog post", url: "https://karpathy.bearblog.dev/vibe-coding-menugen/" },
+      { label: "MenuGen", url: "https://www.menugen.app/" }
+    ]
+  },
+  {
+    id: "power-to-the-people", date: "2025-04-07", type: "blog",
+    title: "Power to the people: how LLMs flip technology diffusion",
+    summary: "New technology usually goes from governments to companies, and only then to normal people. Electricity, computers, the internet and GPS all followed this path. Karpathy says LLMs went the other way. Normal people got the biggest benefit first.",
+    points: [ "He thinks the future is here and, for once, it is spread very widely." ],
+    links: [ { label: "Blog post", url: "https://karpathy.bearblog.dev/power-to-the-people/" } ]
+  },
+  {
+    id: "append-and-review", date: "2025-03-19", type: "blog",
+    title: "The append-and-review note",
+    summary: "Karpathy keeps one single note in Apple Notes, called 'notes'. He adds every new idea or to-do at the top, as plain text. Old items sink down over time. He reviews the note and moves important items back to the top.",
+    points: [
+      "One note means no folders and simple search.",
+      "It is an early form of his later 'LLM Wiki' idea (April 2026)."
+    ],
+    links: [ { label: "Blog post", url: "https://karpathy.bearblog.dev/the-append-and-review-note/" } ]
+  },
+  {
+    id: "vibe-coding", date: "2025-02-02", type: "x",
+    title: "The post that named 'vibe coding'",
+    summary: "Karpathy described a new way to code: you talk to an AI tool, accept what it writes, and stop reading the code. He called it 'vibe coding'. The term spread around the world in weeks.",
+    points: [
+      "He said it is good for quick weekend projects, not serious software.",
+      "In 2026 he said 'agentic engineering' is the next step: agents with professional standards."
+    ],
+    tweet: "https://x.com/karpathy/status/1886192184808149383",
+    links: [ { label: "Post on X", url: "https://x.com/karpathy/status/1886192184808149383" } ]
+  },
+  {
+    id: "jagged-intelligence", date: "2024-07-25", type: "x",
+    title: "Jagged intelligence",
+    summary: "Karpathy gave a name to a strange fact. Top LLMs can solve very hard maths problems. But they can fail at very easy tasks, for example saying 9.11 is bigger than 9.9.",
+    points: [
+      "Their skill is not smooth like a human's. It is 'jagged'.",
+      "He says this is not a fatal flaw, but you must know where the gaps are."
+    ],
+    tweet: "https://x.com/karpathy/status/1816531576228053133",
+    links: [ { label: "Post on X", url: "https://x.com/karpathy/status/1816531576228053133" } ]
+  },
+  {
+    id: "eureka-labs", date: "2024-07-16", type: "x",
+    title: "Karpathy starts Eureka Labs",
+    summary: "Karpathy announced Eureka Labs, 'a new kind of school that is AI native'. Human teachers design the course. AI teaching assistants help each student work through it.",
+    points: [ "The first planned course is LLM101n: build your own small LLM, step by step." ],
+    links: [
+      { label: "Eureka Labs", url: "https://eurekalabs.ai/" },
+      { label: "LLM101n outline", url: "https://github.com/karpathy/LLM101n" },
+      { label: "TechCrunch", url: "https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education" }
+    ]
+  },
+  {
+    id: "reproduce-gpt2", date: "2024-06-09", type: "video",
+    title: "Let's reproduce GPT-2 (124M)",
+    summary: "A 4-hour lecture. Karpathy starts with an empty file and ends with a trained GPT-2 (124M). First he builds the network. Then he makes training fast. Then he runs it and checks the results.",
+    points: [ "He says the run takes about an hour on cloud GPUs and costs about $10." ],
+    video: "l8pRSuU81PU",
+    links: [
+      { label: "Video", url: "https://www.youtube.com/watch?v=l8pRSuU81PU" },
+      { label: "Code", url: "https://github.com/karpathy/build-nanogpt" }
+    ]
+  },
+  {
+    id: "llm-c", date: "2024-04-08", type: "repo",
+    title: "llm.c: train GPT-2 in plain C and CUDA",
+    summary: "llm.c trains GPT-2 without PyTorch or Python. The first version was about 1,000 lines of C. Later he moved it to CUDA so that it runs fast on GPUs.",
+    points: [ "Later the team reproduced the full GPT-2 (1.5B) on one 8-GPU node in 24 hours, for about $672." ],
+    links: [ { label: "Repo", url: "https://github.com/karpathy/llm.c" } ]
+  },
+  {
+    id: "tokenizer", date: "2024-02-20", type: "video",
+    title: "Let's build the GPT Tokenizer",
+    summary: "A 2-hour lecture on tokenizers: the part that turns text into numbers for an LLM. Karpathy builds the GPT tokenizer from scratch with Byte Pair Encoding.",
+    points: [ "He shows that many strange LLM mistakes come from tokenization, for example with spelling, numbers and non-English text." ],
+    video: "zduSFxRajkE",
+    links: [
+      { label: "Video", url: "https://www.youtube.com/watch?v=zduSFxRajkE" },
+      { label: "minbpe code", url: "https://github.com/karpathy/minbpe" }
+    ]
+  },
+  {
+    id: "left-openai", date: "2024-02-14", type: "x",
+    title: "Karpathy leaves OpenAI for the second time",
+    summary: "One year after he returned, Karpathy left OpenAI again. He said there was no drama. He wanted to work on personal projects.",
+    points: [],
+    links: [ { label: "TechCrunch", url: "https://techcrunch.com/2024/02/13/andrej-karpathy-is-leaving-openai-again-but-he-says-there-was-no-drama" } ]
+  },
+  {
+    id: "dream-machines", date: "2023-12-09", type: "x",
+    title: "LLMs are 'dream machines'",
+    summary: "Karpathy says that, in a way, hallucination is all LLMs do. Prompts start a 'dream'. Usually the dream goes somewhere useful. We only call it a hallucination when it goes somewhere false.",
+    points: [ "His point: the LLM itself has no hallucination problem. The LLM assistant does, and we should fix that." ],
+    tweet: "https://x.com/karpathy/status/1733299213503787018",
+    links: [ { label: "Post on X", url: "https://x.com/karpathy/status/1733299213503787018" } ]
+  },
+  {
+    id: "intro-llms", date: "2023-11-23", type: "video",
+    title: "Intro to Large Language Models (1-hour talk)",
+    summary: "A general-audience talk. An LLM is just two files: the weights and a small program that runs them. Karpathy explains training, fine-tuning, the future of LLMs and their security risks.",
+    points: [
+      "Here he explains the 'LLM OS' idea: the LLM is like the kernel of a new operating system.",
+      "The context window is like RAM. Tools and other models are like devices."
+    ],
+    video: "zjkBMFhNj_g",
+    links: [ { label: "Video", url: "https://www.youtube.com/watch?v=zjkBMFhNj_g" } ]
+  },
+  {
+    id: "llama2c", date: "2023-07-23", type: "repo",
+    title: "llama2.c: run a Llama 2 model in one file of C",
+    summary: "A weekend project. Karpathy took nanoGPT and changed it to the Llama 2 design. Then he wrote one 700-line C file that runs the model, with no dependencies.",
+    points: [ "Small models run at interactive speed, even on a normal CPU." ],
+    links: [ { label: "Repo", url: "https://github.com/karpathy/llama2.c" } ]
+  },
+  {
+    id: "state-of-gpt", date: "2023-05-23", type: "talk",
+    title: "State of GPT (Microsoft Build)",
+    summary: "Karpathy explains how a ChatGPT-style assistant is trained, in four steps: pretraining, supervised fine-tuning, reward modelling and reinforcement learning. Then he explains how to use these models well.",
+    points: [
+      "Almost all of the compute goes into pretraining.",
+      "His advice in 2023: use LLMs for low-stakes tasks, with a human checking the work."
+    ],
+    video: "bZQun8Y4L2A",
+    links: [ { label: "Video", url: "https://www.youtube.com/watch?v=bZQun8Y4L2A" } ]
+  },
+  {
+    id: "rejoins-openai", date: "2023-02-09", type: "x",
+    title: "Karpathy returns to OpenAI",
+    summary: "Karpathy announced that he was going back to OpenAI, where he was a founding member. He said the work there and its future potential excited him.",
+    points: [],
+    links: [ { label: "Wikipedia", url: "https://en.wikipedia.org/wiki/Andrej_Karpathy" } ]
+  },
+  {
+    id: "english-language", date: "2023-01-24", type: "x",
+    title: "'The hottest new programming language is English'",
+    summary: "A very famous six-word post. Karpathy said that people can now program computers in plain English, by giving instructions to LLMs.",
+    points: [ "In a follow-up he said this could grow the number of programmers to about 1.5 billion people." ],
+    tweet: "https://x.com/karpathy/status/1617979122625712128",
+    links: [ { label: "Post on X", url: "https://x.com/karpathy/status/1617979122625712128" } ]
+  },
+  {
+    id: "lets-build-gpt", date: "2023-01-17", type: "video",
+    title: "Let's build GPT: from scratch, in code, spelled out",
+    summary: "His most famous lecture. Karpathy builds a small GPT from an empty file, following the 'Attention is All You Need' paper. He trains it on Shakespeare.",
+    points: [ "It is lecture 7 of Neural Networks: Zero to Hero." ],
+    video: "kCc8FmEb1nY",
+    links: [
+      { label: "Video", url: "https://www.youtube.com/watch?v=kCc8FmEb1nY" },
+      { label: "Code", url: "https://github.com/karpathy/ng-video-lecture" }
+    ]
+  },
+  {
+    id: "nanogpt", date: "2023-01-11", type: "repo",
+    title: "nanoGPT: the simplest, fastest repo to train medium-sized GPTs",
+    summary: "A rewrite of minGPT that puts speed first. It has two main files of about 300 lines each. It reproduced GPT-2 (124M) on OpenWebText.",
+    points: [ "It became a standard base for many research projects." ],
+    links: [ { label: "Repo", url: "https://github.com/karpathy/nanoGPT" } ]
+  },
+  {
+    id: "lex-333", date: "2022-10-29", type: "podcast",
+    title: "Lex Fridman Podcast #333",
+    summary: "A 3.5-hour talk after Karpathy left Tesla. Topics: neural networks, Tesla Autopilot, Software 2.0, transformers, robots, aliens and AGI.",
+    points: [ "He calls the transformer a general-purpose computer that you can train." ],
+    video: "cdiD-9MMpb0",
+    links: [ { label: "Video", url: "https://www.youtube.com/watch?v=cdiD-9MMpb0" } ]
+  },
+  {
+    id: "makemore", date: "2022-09-07", type: "video",
+    title: "The makemore series (5 lectures)",
+    summary: "A series of lectures that builds a character-level language model. It starts with simple counting and grows step by step into a deeper network.",
+    points: [
+      "Part 1 (7 Sep 2022): a bigram model.",
+      "Part 2 (12 Sep): an MLP. Part 3 (4 Oct): activations, gradients and BatchNorm.",
+      "Part 4 (11 Oct): backprop by hand. Part 5 (21 Nov): a WaveNet."
+    ],
+    video: "PaCmpygFfXo",
+    links: [
+      { label: "Part 1", url: "https://www.youtube.com/watch?v=PaCmpygFfXo" },
+      { label: "Code", url: "https://github.com/karpathy/makemore" }
+    ]
+  },
+  {
+    id: "micrograd-video", date: "2022-08-16", type: "video",
+    title: "Building micrograd: neural networks and backpropagation",
+    summary: "The first Zero to Hero lecture. Karpathy builds a tiny autograd engine from nothing. He shows that a neural network is only a big maths expression, trained with backpropagation.",
+    points: [ "You need only basic Python and a little calculus." ],
+    video: "VMj-3S1tku0",
+    links: [
+      { label: "Video", url: "https://www.youtube.com/watch?v=VMj-3S1tku0" },
+      { label: "micrograd", url: "https://github.com/karpathy/micrograd" }
+    ]
+  },
+  {
+    id: "left-tesla", date: "2022-07-13", type: "x",
+    title: "Karpathy leaves Tesla",
+    summary: "After five years and a few months on sabbatical, Karpathy left Tesla. He said Autopilot had grown from lane keeping to city streets. He had no concrete plans. He wanted more time for technical work in AI, open source and education.",
+    points: [],
+    links: [ { label: "CNBC", url: "https://www.cnbc.com/2022/07/13/tesla-ai-leader-andrej-karpathy-announces-hes-leaving-the-company.html" } ]
+  },
+  {
+    id: "lecun1989", date: "2022-03-14", type: "blog",
+    title: "Deep Neural Nets: 33 years ago and 33 years from now",
+    summary: "Karpathy reproduced LeCun's 1989 paper on reading handwritten zip codes. It is perhaps the first real use of a network trained end to end with backpropagation. Then he used modern tricks to cut its errors by about 60%.",
+    points: [
+      "Training that took days in 1989 took about 90 seconds on his laptop.",
+      "He predicts that in 2055 people will rarely train networks from zero. They will adapt large foundation models."
+    ],
+    links: [
+      { label: "Blog post", url: "https://karpathy.github.io/2022/03/14/lecun1989/" },
+      { label: "Code", url: "https://github.com/karpathy/lecun1989-repro" }
+    ]
+  },
+  {
+    id: "tesla-ai-day", date: "2021-08-19", type: "talk",
+    title: "Tesla AI Day: how Autopilot sees",
+    summary: "Karpathy explained Tesla's vision system. Eight cameras feed one large network. It builds a 3D 'bird's-eye view' of the road. Many task 'heads' share one backbone. Tesla calls this design 'HydraNet'.",
+    points: [ "The talk also covered how Tesla labels huge amounts of video data." ],
+    links: [ { label: "Video (Karpathy's part)", url: "https://youtu.be/j0z4FweCy4M?t=2900" } ]
+  },
+  {
+    id: "bitcoin-python", date: "2021-06-21", type: "blog",
+    title: "A from-scratch tour of Bitcoin in Python",
+    summary: "Karpathy makes, signs and sends a real Bitcoin transaction in pure Python, with no libraries. On the way he writes the maths of elliptic curves, the SHA-256 hash and the transaction format himself.",
+    points: [
+      "The idea: 'what I cannot create, I do not understand'.",
+      "The full code is in his 'cryptos' repo."
+    ],
+    links: [
+      { label: "Blog post", url: "https://karpathy.github.io/2021/06/21/blockchain/" },
+      { label: "cryptos repo", url: "https://github.com/karpathy/cryptos" }
+    ]
+  },
+  {
+    id: "forward-pass", date: "2021-03-27", type: "blog",
+    title: "Short Story on AI: Forward Pass",
+    summary: "A short fiction story. A language model becomes aware of itself during one forward pass, and has an existential crisis. A GPT-3 'Turing test' article gave him the idea.",
+    points: [],
+    links: [ { label: "Story", url: "https://karpathy.github.io/2021/03/27/forward-pass/" } ]
+  },
+  {
+    id: "mingpt", date: "2020-08-17", type: "repo",
+    title: "minGPT: a GPT in about 300 lines of PyTorch",
+    summary: "A small, clean, educational version of GPT. Karpathy says GPT is not a complicated model. Most of the complexity is clever batching for speed.",
+    points: [ "In 2023 he replaced it with nanoGPT." ],
+    links: [ { label: "Repo", url: "https://github.com/karpathy/minGPT" } ]
+  },
+  {
+    id: "biohacking-lite", date: "2020-06-11", type: "blog",
+    title: "Biohacking Lite",
+    summary: "Karpathy explores the biochemistry of energy and weight. He explains how the body stores and burns energy. He also describes his own small experiments with weight, diet and measurements.",
+    points: [],
+    links: [ { label: "Blog post", url: "https://karpathy.github.io/2020/06/11/biohacking-lite/" } ]
+  }
+]);
+
 /* Blog posts we list but have not summarised yet. */
 window.ARCHIVE = [
   { date: "2025-12-18", title: "Chemical hygiene", url: "https://karpathy.bearblog.dev/chemical-hygiene/" },
-  { date: "2025-12-10", title: "Auto-grading decade-old Hacker News discussions with hindsight", url: "https://karpathy.bearblog.dev/auto-grade-hn/" },
   { date: "2025-11-29", title: "The space of minds", url: "https://karpathy.bearblog.dev/the-space-of-minds/" },
-  { date: "2025-04-27", title: "Vibe coding MenuGen", url: "https://karpathy.bearblog.dev/vibe-coding-menugen/" },
-  { date: "2025-04-07", title: "Power to the people: How LLMs flip the script on technology diffusion", url: "https://karpathy.bearblog.dev/power-to-the-people/" },
   { date: "2025-03-24", title: "Finding the Best Sleep Tracker", url: "https://karpathy.bearblog.dev/finding-the-best-sleep-tracker/" },
-  { date: "2025-03-19", title: "The append-and-review note", url: "https://karpathy.bearblog.dev/the-append-and-review-note/" },
   { date: "2025-03-17", title: "Digital hygiene", url: "https://karpathy.bearblog.dev/digital-hygiene/" },
   { date: "2024-09-08", title: "I love calculator", url: "https://karpathy.bearblog.dev/i-love-calculator/" }
 ];
@@ -440,7 +739,11 @@ window.RESOURCES = [
       { title: "build-nanogpt", meta: "The GPT-2 reproduction, one commit at a time", url: "https://github.com/karpathy/build-nanogpt" },
       { title: "llm.c", meta: "LLM training in plain C and CUDA", url: "https://github.com/karpathy/llm.c" },
       { title: "nanochat", meta: "Full pipeline for a small ChatGPT-style model", url: "https://github.com/karpathy/nanochat" },
-      { title: "autoresearch", meta: "An agent runs ML experiments overnight", url: "https://github.com/karpathy/autoresearch" }
+      { title: "autoresearch", meta: "An agent runs ML experiments overnight", url: "https://github.com/karpathy/autoresearch" },
+      { title: "minGPT", meta: "His 2020 GPT in about 300 lines (now replaced by nanoGPT)", url: "https://github.com/karpathy/minGPT" },
+      { title: "llama2.c", meta: "Run a Llama 2 model in one C file", url: "https://github.com/karpathy/llama2.c" },
+      { title: "cryptos", meta: "Bitcoin from scratch in pure Python", url: "https://github.com/karpathy/cryptos" },
+      { title: "llm-council", meta: "Several LLMs answer, review each other, then agree", url: "https://github.com/karpathy/llm-council" }
     ]
   },
   {
@@ -460,6 +763,9 @@ window.RESOURCES = [
       { title: "A Survival Guide to a PhD", meta: "2016", url: "https://karpathy.github.io/2016/09/07/phd/" },
       { title: "The Unreasonable Effectiveness of Recurrent Neural Networks", meta: "2015", url: "https://karpathy.github.io/2015/05/21/rnn-effectiveness/" },
       { title: "Short Story on AI: Forward Pass", meta: "2021", url: "https://karpathy.github.io/2021/03/27/forward-pass/" },
+      { title: "Deep Neural Nets: 33 years ago and 33 years from now", meta: "2022", url: "https://karpathy.github.io/2022/03/14/lecun1989/" },
+      { title: "A from-scratch tour of Bitcoin in Python", meta: "2021", url: "https://karpathy.github.io/2021/06/21/blockchain/" },
+      { title: "Biohacking Lite", meta: "2020", url: "https://karpathy.github.io/2020/06/11/biohacking-lite/" },
       { title: "What I learned from competing against a ConvNet on ImageNet", meta: "2014", url: "https://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/" }
     ]
   },
@@ -537,6 +843,10 @@ window.ABOUT = {
     { name: "Ghosts, not animals", text: "LLMs are not like animal minds. They are statistical copies of human data." },
     { name: "Verifiability", text: "AI improves fastest where success is easy to check automatically." },
     { name: "Decade of agents", text: "Agents will take years of work to become reliable, not one year." },
-    { name: "Idea files", text: "In the agent era, share the idea as text. Each person's agent builds their own version." }
+    { name: "Idea files", text: "In the agent era, share the idea as text. Each person's agent builds their own version." },
+    { name: "LLM OS", text: "The LLM is like the kernel of a new operating system. The context window is its memory, and tools are its devices." },
+    { name: "Context engineering", text: "Fill the context window with exactly the right information for the next step. A prompt is only a small part of it." },
+    { name: "Dream machines", text: "LLMs always 'dream'. We call it hallucination only when the dream is false." },
+    { name: "The hottest new programming language is English", text: "People can now program computers by giving LLMs instructions in plain language." }
   ]
 };
