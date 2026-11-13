@@ -7,7 +7,7 @@
 window.SITE = {
   name: "karpathy.log",
   tagline: "An unofficial archive of Andrej Karpathy's public work on AI.",
-  lastChecked: "2026-11-11",
+  lastChecked: "2026-11-13",
   checkEveryDays: 4,
   // Full public address of the site. Used for links in the RSS feed and the emails.
   siteUrl: "https://rkade159.github.io/karpathy-log/",
